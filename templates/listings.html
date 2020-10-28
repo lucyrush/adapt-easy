@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listings</title>
+</head>
+<body>
+    {% for adaption in adaptions %}
+        {{ adaption.business_name }}<br>
+        {{ adaption.business_description }}<br>
+        {{ adaption.adaption_description }}<br>
+        {{ adaption.mask_mandatory }}<br>
+        {{ adaption.valid_until }}<br>
+        {{ adaption.image_url }}<br>
+    {% endfor %}
+</body>
+</html>
