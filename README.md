@@ -1,8 +1,6 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+Adapt Easy is a full stack application targeting small business owners and their customer bases. It allows both small business owners/managers and their customers to see how their business has adapted to suit new COVID requirements. It will allow businesses to effectively communicate these adaptations to their customers in a clear way to make sure everyone stays safe during the pandemic.
 
-Welcome USER_NAME,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+Small business owners will be able to give a short description of their business, the COVID adaptation requirements and the time until this adaption will be implemented. Customers will also be able to see if wearing a mask is required to visit the business. Business owners will be able to create listings, update them and delete them as COVID requirements and restrictions change. 
 
 ## Gitpod Reminders
 
