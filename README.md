@@ -45,7 +45,7 @@ font-family: 'Rubik', sans-serif;
 ## Wireframes
 [Contact Us](wireframes/contactus-capewine.JPG)
 - Desktop
-  - [About](wireframes/about_desktop.JPG)
+  - [About](wireframes/desktop/about_desktop.JPG)
   - [Register](wireframes/)
   - [Login](wireframes/)
   - [New Listing](wireframes/)
