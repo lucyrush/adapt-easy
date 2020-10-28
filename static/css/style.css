@@ -1,3 +1,7 @@
-body{
-    background-color: red;
+.page-heading{
+    font-family: 'Rubik', sans-serif;
 }
+
+body p(
+    font-family: 'Poppins', sans-serif;
+)
