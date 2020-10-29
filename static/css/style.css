@@ -1,8 +1,22 @@
-.page-heading{
-    font-family: 'Rubik', sans-serif;
-    color: #3157Af;
+body{
+    font-family: 'Poppins', sans-serif;
 }
 
-body p(
-    font-family: 'Poppins', sans-serif;
-)
+/*Page headings and nav bar */
+.page-heading{
+    font-family: 'Rubik', sans-serif;
+    color: #DC5864;
+    text-transform: uppercase;
+}
+
+.nav-extended{
+    background-color: #3157Af;
+}
+
+.brand-logo{
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+}
+
+
+    
