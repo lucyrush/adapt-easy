@@ -18,5 +18,12 @@ body{
     text-transform: uppercase;
 }
 
+/* Images */
 
-    
+.register-img {
+    height: 40%;
+}
+
+.btn-large {
+    background-color: #3157Af;
+}
