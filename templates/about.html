@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2 class="page-heading center-align"> Listings </h2>
+
+    {% for adaption in adaptions %}
+        {{ adaption.business_name }}<br>
+        {{ adaption.business_description }}<br>
+        {{ adaption.adaption_description }}<br>
+        {{ adaption.mask_mandatory }}<br>
+        {{ adaption.valid_until }}<br>
+        {{ adaption.image_url }}<br>
+    {% endfor %}
+{% endblock %}
