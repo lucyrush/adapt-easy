@@ -1,35 +1,35 @@
 {% extends "base.html" %} {% block content %}
 
 <h2 class="page-heading center-align">Listings</h2>
+<h6 class="page-intro center-align"> Your local small business and their COVID adaptions </h6>
 
 {% for adaption in adaptions %} 
-{{ adaption.business_name }}<br />
-{{ adaption.business_description }}<br />
-{{ adaption.adaption_description }}<br />
-{{ adaption.mask_mandatory }}<br />
-{{ adaption.valid_until }}<br />
-{{ adaption.image_url }}<br />
-{% endfor %}
-
 <div class="col s12 m10">
-  <h2 class="header">Business name</h2>
+
+  <h3 class="list-heading">{{ adaption.business_name }}</h3>
   <div class="card horizontal">
     <div class="card-image">
-      <img
-        class="responsive-img center-align"
-        src="static/images/Crowd 03_Copy.jpg"
-      />
+      <img class="responsive-img center-align" src="{{ adaption.image_url }}" />
     </div>
     <div class="card-stacked">
       <div class="card-content">
-        
+        <p class="adaption-text"> Business Description: {{ adaption.business_description }} </p><br/>
+        <p class="adaption-text"> Adaption Description: {{ adaption.adaption_description }} </p><br/>
+        <p class="adaption-text"> Adaption Description: {{ adaption.adaption_description }} </p><br/>
+        {% if adaption.mask_mandatory == "on" %}
+            <p class="adaption-text"> Mask is mandatory for service!</p>
+        {% endif %}
+        <br />
+        <p class="adaption-text"> Adaption Valid Until: {{ adaption.valid_until }} </p><br/>
       </div>
       <div class="card-action">
-        <a href="#">This is a link</a>
-        <a href="#">This is a link</a>
+        <a href="#">Edit</a>
+        <a href="#">Delete</a>
       </div>
     </div>
   </div>
+  
 </div>
+{% endfor %}
 
 {% endblock %}

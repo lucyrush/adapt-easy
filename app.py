@@ -21,7 +21,7 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/get_adaptions")
 def get_adaptions():
-    adaptions = mongo.db.adaptions.find()
+    adaptions = list(mongo.db.adaptions.find())
     return render_template("listings.html", adaptions=adaptions)
 
 

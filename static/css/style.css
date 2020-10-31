@@ -34,6 +34,16 @@ body{
     height: 100%;
 }
 
+/* Listings Page */
 .card-image {
-    width: 30%;
+    width: 20%;
+}
+
+.list-heading {
+    font-family: 'Rubik', sans-serif;
+}
+
+.card-action {
+    color: #DC5864;
+    font-family: 'Rubik', sans-serif;
 }
