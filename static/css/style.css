@@ -21,9 +21,15 @@ body{
 /* Images */
 
 .register-img {
-    height: 40%;
+    height: 100%;
 }
 
 .btn-large {
     background-color: #3157Af;
+}
+
+/* Register Page */
+
+.card-panel {
+    height: 100%;
 }
