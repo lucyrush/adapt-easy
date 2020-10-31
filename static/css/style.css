@@ -33,3 +33,7 @@ body{
 .card-panel {
     height: 100%;
 }
+
+.card-image {
+    width: 30%;
+}

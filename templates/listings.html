@@ -1,15 +1,35 @@
-{% extends "base.html" %}
-{% block content %}
+{% extends "base.html" %} {% block content %}
 
-<h2 class="page-heading center-align"> Listings </h2>
+<h2 class="page-heading center-align">Listings</h2>
 
-    {% for adaption in adaptions %}
-        {{ adaption.business_name }}<br>
-        {{ adaption.business_description }}<br>
-        {{ adaption.adaption_description }}<br>
-        {{ adaption.mask_mandatory }}<br>
-        {{ adaption.valid_until }}<br>
-        {{ adaption.image_url }}<br>
-    {% endfor %}
+{% for adaption in adaptions %} 
+{{ adaption.business_name }}<br />
+{{ adaption.business_description }}<br />
+{{ adaption.adaption_description }}<br />
+{{ adaption.mask_mandatory }}<br />
+{{ adaption.valid_until }}<br />
+{{ adaption.image_url }}<br />
+{% endfor %}
+
+<div class="col s12 m10">
+  <h2 class="header">Business name</h2>
+  <div class="card horizontal">
+    <div class="card-image">
+      <img
+        class="responsive-img center-align"
+        src="static/images/Crowd 03_Copy.jpg"
+      />
+    </div>
+    <div class="card-stacked">
+      <div class="card-content">
+        
+      </div>
+      <div class="card-action">
+        <a href="#">This is a link</a>
+        <a href="#">This is a link</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 {% endblock %}
