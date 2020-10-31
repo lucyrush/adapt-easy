@@ -39,7 +39,7 @@
           <ul class="right hide-on-med-and-down">
             <li><a href="{{ url_for('home') }}">Home</a></li>
             <li><a href="{{ url_for('get_adaptions') }}">Listings</a></li>
-            <li><a href="#">Profile</a></li>
+            <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
             <li><a href="#">New Listing</a></li>
             <li><a href="{{ url_for('login') }}">Login</a></li>
             <li><a href="{{ url_for('register') }}">Register</a></li>
@@ -52,7 +52,7 @@
         <li><a href="{{ url_for('home') }}" class="brand-logo">Adapt Easy</a></li>
         <li><a href="{{ url_for('home') }}">Home</a></li>
         <li><a href="{{ url_for('get_adaptions') }}">Listings</a></li>
-        <li><a href="#">Profile</a></li>
+        <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
         <li><a href="#">New Listing</a></li>
         <li><a href="{{ url_for('login') }}">Login</a></li>
         <li><a href="{{ url_for('register') }}">Register</a></li>
