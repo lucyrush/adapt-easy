@@ -32,7 +32,7 @@
     <!--main nav bar-->
       <nav class="nav-extended">
         <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">Adapt Easy</a>
+          <a href="{{ url_for('home') }}" class="brand-logo">Adapt Easy</a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger right"
             ><i class="fas fa-bars"></i></a
           >
@@ -49,7 +49,7 @@
       </nav>
     <!--mobile sidenav-->
       <ul class="sidenav" id="mobile-demo">
-        <li><a href="#!" class="brand-logo">Adapt Easy</a></li>
+        <li><a href="{{ url_for('home') }}" class="brand-logo">Adapt Easy</a></li>
         <li><a href="{{ url_for('home') }}">Home</a></li>
         <li><a href="{{ url_for('get_adaptions') }}">Listings</a></li>
         <li><a href="#">Profile</a></li>
@@ -67,4 +67,29 @@
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     {% block scripts %} {% endblock %}
   </body>
+
+  <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Contact Us</h5>
+              <p class="grey-text text-lighten-4">email: adapt-easy@gmail.com</p>
+              <p class="grey-text text-lighten-4">phone: +353 123456789</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Navigation</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#top">Jump to Top</a></li>
+                <li><a class="grey-text text-lighten-3" href="#">Login</a></li>
+                <li><a class="grey-text text-lighten-3" href="{{ url_for('register') }}">Register</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            © Educational purposes only by Lucy Rush
+          </div>
+        </div>
+      </footer>
 </html>
