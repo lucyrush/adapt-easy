@@ -1,12 +1,12 @@
 {% extends "base.html" %} {% block content %}
 
-<h2 class="page-heading center-align">New Listing</h2>
+<h2 class="page-heading center-align">Edit Listing</h2>
 <h6 class="page-intro center-align">
-  Add a new listing to showcase the adaptions your business has made
+  Make changes to your current listing here, perfect for when restrictions change!
 </h6>
 
 <div class="row card-panel grey lighten-5">
-  <form class="col s12" method="POST" action="{{ url_for('new_listing') }}">
+  <form class="col s12" method="POST" action="edit_adaption">
    <div class="row">
 				<div class="input-field col s12">
                     <i class="fas fa-city prefix"></i>

@@ -117,6 +117,13 @@ def new_listing():
     return render_template("new_listing.html", categories=categories)
 
 
+@app.route("/edit_adaption/<adaption_id>", methods=["GET", "POST"])
+def edit_adaption(adaption_id):
+    adaption = mongo.db.tasks.find_one({"_id": ObjectId(adaption_id)})
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("edit_adaption.html", adaption=adaption, categories=categories)
+
+
 @app.route("/home")
 def home():
     return render_template("home.html")
