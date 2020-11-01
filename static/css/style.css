@@ -60,3 +60,7 @@ body{
 .data-text {
     font-size: 18px;
 }
+
+.btn-small {
+    margin: 1%;
+}
