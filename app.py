@@ -97,8 +97,22 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/new_listing")
+@app.route("/new_listing", methods=["GET", "POST"])
 def new_listing():
+    if request.method == "POST":
+        mask_mandatory = "on" if request.form.get("mask_mandatory") else "off"
+        adaption = {
+            "business_name": request.form.get("business_name"),
+            "business_description": request.form.get("business_description"),
+            "adaption_description": request.form.get("adaption_description"),
+            "mask_mandatory": mask_mandatory,
+            "valid_until": request.form.get("valid_until"),
+            "created_by": session["user"]
+        }
+        mongo.db.adaptions.insert_one(adaption)
+        flash("New Listing Successfully Added")
+        return redirect(url_for("get_adaptions"))
+
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("new_listing.html", categories=categories)
 

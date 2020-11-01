@@ -13,6 +13,8 @@
     </div>
     <div class="card-stacked">
       <div class="card-content">
+        <p class="data-text"> {{adaption.category_name}} </p>
+        <br/>
         <p class="adaption-text"> Business Description</p>
             <p class="data-text"> {{adaption.business_description }} </p>
         <br/>
@@ -26,6 +28,7 @@
         <p class="adaption-text"> Adaption Valid Until</p>
             <p class="data-text"> {{ adaption.valid_until }} </p>
           <br/>
+        <p><em>by: {{ adaption.created_by }}</em></p>
         <a href="{{ adaption.website_url }} " target="_blank"><p class="adaption-text center-align">Click here to go to website</p></a>
       </div>
       <div class="card-action center-align">
