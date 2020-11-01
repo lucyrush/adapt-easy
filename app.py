@@ -99,7 +99,8 @@ def logout():
 
 @app.route("/new_listing")
 def new_listing():
-    return render_template("new_listing.html")
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("new_listing.html", categories=categories)
 
 
 @app.route("/home")
