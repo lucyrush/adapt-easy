@@ -102,6 +102,7 @@ def new_listing():
     if request.method == "POST":
         mask_mandatory = "on" if request.form.get("mask_mandatory") else "off"
         adaption = {
+            "category_name": request.form.get("category_name"),
             "business_name": request.form.get("business_name"),
             "business_description": request.form.get("business_description"),
             "adaption_description": request.form.get("adaption_description"),
