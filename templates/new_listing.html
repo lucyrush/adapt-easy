@@ -1,24 +1,97 @@
-{% extends "base.html" %}
-{% block content %}
+{% extends "base.html" %} {% block content %}
 
-    <h2 class="page-heading center-align"> New Listing </h2>
-    <h6 class="page-intro center-align"> Add a new listing to showcase your businesses adaptions  </h6>
+<h2 class="page-heading center-align">New Listing</h2>
+<h6 class="page-intro center-align">
+  Add a new listing to showcase the adaptions your business has made
+</h6>
 
+<div class="row card-panel grey lighten-5">
+  <form class="col s12" method="POST" action="">
     <div class="row">
-        <form class="col s12" method="POST" action="">
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-user-circle prefix light-blue-text text-darken-4"></i>
-                    <input id="icon_prefix" type="text" class="validate">
-                    <label for="icon_prefix">First Name</label>
-                </div>
-                <div class="input-field col s12">
-                    <i class="fas fa-phone prefix light-blue-text text-darken-4"></i>
-                    <input id="icon_telephone" type="tel" class="validate">
-                    <label for="icon_telephone">Telephone</label>
-                </div>
-            </div>
-        </form>
+      <div class="input-field col s12">
+        <i class="fas fa-signature prefix text-darken-8"></i>
+        <input
+          id="business_name"
+          name="business_name"
+          minlength="5"
+          maxlength="50"
+          type="text"
+          class="validate"
+          required
+        />
+        <label for="business_name">Business Name</label>
+      </div>
     </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="fas fa-align-left prefix text-darken-4"></i>
+        <textarea
+          id="business_description"
+          name="business_description"
+          minlength="5"
+          maxlength="200"
+          class="materialize-textarea validate"
+          required
+        ></textarea>
+        <label for="business_description">Business Description</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="fas fa-exchange-alt prefix text-darken-4"></i>
+        <textarea
+          id="adaption_description"
+          name="adaption_description"
+          minlength="5"
+          maxlength="200"
+          class="materialize-textarea validate"
+          required
+        ></textarea>
+        <label for="adaption_description">Adaption Description</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="fas fa-calendar-day prefix"></i>
+        <input
+          id="valid_until"
+          name="valid_until"
+          type="text"
+          class="datepicker validate"
+          required
+        />
+        <label for="valid_until">Adaption Valid Until</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <div class="switch">
+          <i class="fas fa-head-side-mask prefix"></i>
+          <label for="mask_mandatory">
+            <input type="checkbox" id="mask_mandatory" name="mask_mandatory" />
+            <span class="lever"></span>
+            Mask Mandatory for service
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <i class="far fa-image prefix"></i>
+        <input id="image_url"
+          name="image_url"
+          class="validate" />
+        <label for="image_url">Paste desired image URL here</label>
+      </div>
+      <div class="input-field col s6">
+        <i class="fas fa-browser prefix"></i>
+        <input id="website_url"
+          name="website_url"
+          class="validate" />
+        <label for="website_url">Paste URL for the website here</label>
+      </div>
+    </div>
+  </form>
+</div>
 
 {% endblock %}

@@ -50,6 +50,7 @@ body{
 .adaption-text {
     font-family: 'Rubik', sans-serif;
     color: black;
+    text-transform: uppercase;
 }
 
 .mandatory-text {
