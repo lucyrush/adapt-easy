@@ -97,6 +97,11 @@ def logout():
     return redirect(url_for("login"))
 
 
+@app.route("/new_listing")
+def new_listing():
+    return render_template("new_listing.html")
+
+
 @app.route("/home")
 def home():
     return render_template("home.html")
