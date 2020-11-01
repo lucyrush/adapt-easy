@@ -120,7 +120,7 @@ def new_listing():
 
 @app.route("/edit_adaption/<adaption_id>", methods=["GET", "POST"])
 def edit_adaption(adaption_id):
-    adaption = mongo.db.tasks.find_one({"_id": ObjectId(adaption_id)})
+    adaption = mongo.db.adaptions.find_one({"_id": ObjectId(adaption_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit_adaption.html", adaption=adaption,
         categories=categories)
