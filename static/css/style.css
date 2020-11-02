@@ -36,7 +36,8 @@ body{
 
 /* Listings Page */
 .card-image {
-    width: 20%;
+    width: 30%;
+    padding: 2%;
 }
 
 .list-heading {
