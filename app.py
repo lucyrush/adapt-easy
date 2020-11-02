@@ -25,6 +25,11 @@ def get_adaptions():
     return render_template("listings.html", adaptions=adaptions)
 
 
+@app.route("/home")
+def home():
+    render_template("home.html")
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -150,11 +155,6 @@ def delete_adaption(adaption_id):
     mongo.db.adaptions.remove({"_id": ObjectId(adaption_id)})
     flash("Listing Successfully Deleted")
     return redirect(url_for("get_adaptions")
-
-
-@app.route("/home")
-def home():
-    return render_template("home.html")
 
 
 if __name__ == "__main__":
