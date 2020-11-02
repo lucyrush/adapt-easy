@@ -145,6 +145,13 @@ def edit_adaption(adaption_id):
         categories=categories)
 
 
+@app.route("/delete_adaption/<adaption_id>")
+def delete_adaption(adaption_id):
+    mongo.db.adaptions.remove({"_id": ObjectId(adaption_id)})
+    flash("Listing Successfully Deleted")
+    return redirect(url_for("get_adaptions")
+
+
 @app.route("/home")
 def home():
     return render_template("home.html")
