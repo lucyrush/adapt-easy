@@ -122,6 +122,23 @@ def new_listing():
 
 @app.route("/edit_adaption/<adaption_id>", methods=["GET", "POST"])
 def edit_adaption(adaption_id):
+    if request.method == "POST":
+        mask_mandatory = "on" if request.form.get("mask_mandatory") else "off"
+        submit = {
+            "category_name": request.form.get("category_name"),
+            "business_name": request.form.get("business_name"),
+            "business_description": request.form.get("business_description"),
+            "adaption_description": request.form.get("adaption_description"),
+            "mask_mandatory": mask_mandatory,
+            "valid_until": request.form.get("valid_until"),
+            "image_url": request.form.get("image_url"),
+            "website_url": request.form.get("website_url"),
+            "created_by": session["user"]
+        }
+        mongo.db.adaptions.update({"_id": ObjectId(adaption_id)}, submit)
+        flash("New Listing Successfully Updated")
+        return redirect(url_for("get_adaptions"))
+
     adaption = mongo.db.adaptions.find_one({"_id": ObjectId(adaption_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit_adaption.html", adaption=adaption,
