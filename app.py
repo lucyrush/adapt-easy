@@ -108,6 +108,8 @@ def new_listing():
             "adaption_description": request.form.get("adaption_description"),
             "mask_mandatory": mask_mandatory,
             "valid_until": request.form.get("valid_until"),
+            "image_url": request.form.get("image_url"),
+            "website_url": request.form.get("website_url"),
             "created_by": session["user"]
         }
         mongo.db.adaptions.insert_one(adaption)
