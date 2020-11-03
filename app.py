@@ -85,7 +85,7 @@ def profile(username):
     adaptions = mongo.db.adaptions.find()
     user = mongo.db.users.find_one({'_id': username})
 
-    if session["user"]:
+    if username == session["user"]:
         return render_template("profile.html", username=username,
             adaptions=adaptions, user=user)
 
