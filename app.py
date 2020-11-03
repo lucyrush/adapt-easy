@@ -25,6 +25,13 @@ def get_adaptions():
     return render_template("listings.html", adaptions=adaptions)
 
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    adaptions = list(mongo.db.adaptions.find({"$text": {"$search": query}}))
+    return render_template("listings.html", adaptions=adaptions)
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":

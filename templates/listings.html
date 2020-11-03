@@ -3,9 +3,27 @@
 <h2 class="page-heading center-align">Listings</h2>
 <h6 class="page-intro center-align"> Your local small business and their COVID adaptions </h6>
 
-{% for adaption in adaptions %} 
-<div class="col s12 m10">
+<div class="row card-panel grey lighten-5">
+        <form action="{{ url_for('search') }}" method="post" class="col s12">
+            <div class="row valign-wrapper center-align">
+                <div class="input-field col s12 m8">
+                    <i class="fas fa-search prefix black"></i>
+                    <input type="text" name="query" id="query" minlength="3" class="validate" required>
+                    <label for="query">Search Adaptions</label>
+                </div>
+                <div class="col s12 m4">
+                    <a href="{{ url_for('get_adaptions') }}" class="red btn text-shadow">Reset</a>
+                    <button type="submit" class="light-blue darken-1 btn text-shadow">
+                        <i class="fas fa-search left black"></i> Search
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
 
+{% if adaptions|length > 0 %}
+<div class="col s12 m10">
+{% for adaption in adaptions %} 
   <h3 class="list-heading">{{ adaption.business_name }}</h3>
   <div class="card horizontal hoverable">
     <div class="card-image">
@@ -39,8 +57,11 @@
       </div>
     </div>
   </div>
-  
+  {% endfor %}
 </div>
-{% endfor %}
+{% else %}
+        <h2 class="red-text page-heading center-align">No Results Found</h2>
+{% endif %}
+
 
 {% endblock %}
