@@ -146,15 +146,15 @@ def edit_adaption(adaption_id):
 
     adaption = mongo.db.adaptions.find_one({"_id": ObjectId(adaption_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
-    return render_template("edit_adaption.html", adaption=adaption,
-        categories=categories)
+    return render_template("edit_adaption.html",
+        adaption=adaption, categories=categories)
 
 
 @app.route("/delete_adaption/<adaption_id>")
 def delete_adaption(adaption_id):
     mongo.db.adaptions.remove({"_id": ObjectId(adaption_id)})
     flash("Listing Successfully Deleted")
-    return redirect(url_for("get_adaptions")
+    return redirect(url_for("get_adaptions"))
 
 
 if __name__ == "__main__":
