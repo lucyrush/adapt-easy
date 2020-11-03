@@ -12,5 +12,51 @@
       </h3>
     </div>
   </div>
+  {% for adaption in adaptions %} 
+  {% if adaption.owner == user._id %}
+
+<div class="col s12 m10">
+
+  <h3 class="list-heading">{{ adaption.business_name }}</h3>
+  <div class="card horizontal hoverable">
+    <div class="card-image">
+      <img class="responsive-img" alt="" src="{{ adaption.image_url }}" />
+    </div>
+    <div class="card-stacked">
+      <div class="card-content">
+        <p class="data-text"> {{adaption.category_name}} </p>
+        <br/>
+        <p class="adaption-text"> Business Description</p>
+            <p class="data-text"> {{adaption.business_description }} </p>
+        <br/>
+        <p class="adaption-text"> Adaption Description</p>
+            <p class="data-text"> {{ adaption.adaption_description }} </p>
+        <br/>
+        {% if adaption.mask_mandatory == "on" %}
+            <p class="mandatory-text"> Mask is mandatory for service!</p>
+        {% endif %}
+        <br />
+        <p class="adaption-text"> Adaption Valid Until</p>
+            <p class="data-text"> {{ adaption.valid_until }} </p>
+          <br/>
+        <p><em>by: {{ adaption.created_by }}</em></p>
+        <a href="{{ adaption.website_url }} " target="_blank"><p class="adaption-text center-align">Click here to go to website</p></a>
+      </div>
+      <div class="card-action center-align">
+      
+        <a href="{{ url_for('edit_adaption', adaption_id=adaption._id) }}" class="btn-small black">Edit</a>
+        <a href="{{ url_for('delete_adaption', adaption_id=adaption._id) }}" class="btn-small black">Delete</a>
+      
+      </div>
+    </div>
+  </div>
+  
 </div>
+{% endif %}
+{% endfor %}
+</div>
+
+
+
+
 {% endblock %}

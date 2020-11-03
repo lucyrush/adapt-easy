@@ -82,9 +82,12 @@ def profile(username):
     # grab the session user's username from db
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
+    adaptions = mongo.db.adaptions.find()
+    user = mongo.db.users.find_one({'_id': username})
 
     if session["user"]:
-        return render_template("profile.html", username=username)
+        return render_template("profile.html", username=username,
+            adaptions=adaptions, user=user)
 
     return redirect(url_for("login"))
 
