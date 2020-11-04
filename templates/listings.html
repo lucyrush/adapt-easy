@@ -11,9 +11,9 @@
                     <label for="query">Search Adaptions</label>
                 </div>
                 <div class="col s12 m4">
-                    <a href="{{ url_for('get_adaptions') }}" class="black btn text-shadow">Reset</a>
-                    <button type="submit" class="black darken-1 btn text-shadow">
-                        <i class="fas fa-search left black"></i> Search
+                    <a href="{{ url_for('get_adaptions') }}" class="btn search-reset">Reset</a>
+                    <button type="submit" class="btn search-reset">
+                        <i class="fas fa-search left"></i> Search
                     </button>
                 </div>
             </div>
@@ -32,17 +32,17 @@
       <div class="card-content">
         <p class="data-text"> {{adaption.category_name}} </p>
         <br/>
-        <p class="adaption-text"> Business Description</p>
+        <p class="adaption-text"><i class="fas fa-align-left prefix"></i> Business Description</p>
             <p class="data-text"> {{adaption.business_description }} </p>
         <br/>
-        <p class="adaption-text"> Adaption Description</p>
+        <p class="adaption-text"><i class="fas fa-exchange-alt prefix"></i> Adaption Description</p>
             <p class="data-text"> {{ adaption.adaption_description }} </p>
         <br/>
         {% if adaption.mask_mandatory == "on" %}
-            <p class="mandatory-text"> Mask is mandatory for service!</p>
+            <p class="mandatory-text"><i class="fas fa-head-side-mask prefix"></i> Mask is mandatory for service!</p>
         {% endif %}
         <br />
-        <p class="adaption-text"> Adaption Valid Until</p>
+        <p class="adaption-text"><i class="fas fa-calendar-day prefix"></i> Adaption Valid Until</p>
             <p class="data-text"> {{ adaption.valid_until }} </p>
           <br/>
         <p><em>by: {{ adaption.created_by }}</em></p>

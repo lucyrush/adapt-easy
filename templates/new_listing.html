@@ -10,7 +10,7 @@
    <div class="row">
    <!--category selection-->
 				<div class="input-field col s12">
-                    <i class="fas fa-city prefix"></i>
+                    <i class="list-icon fas fa-city prefix"></i>
 					<select id="category_name" name="category_name" class="validate" required>
                         <option value="" disabled selected>Choose Category or sector</option>
                         {% for category in categories %}
@@ -23,7 +23,7 @@
     <!-- business name -->
     <div class="row">
       <div class="input-field col s12">
-        <i class="fas fa-signature prefix text-darken-8"></i>
+        <i class="list-icon fas fa-signature prefix"></i>
         <input
           id="business_name"
           name="business_name"
@@ -39,7 +39,7 @@
     <!-- business description -->
     <div class="row">
       <div class="input-field col s12">
-        <i class="fas fa-align-left prefix text-darken-4"></i>
+        <i class="list-icon fas fa-align-left prefix"></i>
         <textarea
           id="business_description"
           name="business_description"
@@ -54,7 +54,7 @@
     <!-- adaption description -->
     <div class="row">
       <div class="input-field col s12">
-        <i class="fas fa-exchange-alt prefix text-darken-4"></i>
+        <i class="list-icon fas fa-exchange-alt prefix"></i>
         <textarea
           id="adaption_description"
           name="adaption_description"
@@ -69,7 +69,7 @@
     <!-- valid until date picker -->
     <div class="row">
       <div class="input-field col s12">
-        <i class="fas fa-calendar-day prefix"></i>
+        <i class="list-icon fas fa-calendar-day prefix"></i>
         <input
           id="valid_until"
           name="valid_until"
@@ -84,7 +84,7 @@
     <div class="row">
       <div class="input-field col s12">
         <div class="switch">
-          <i class="fas fa-head-side-mask prefix"></i>
+          <i class="list-icon fas fa-head-side-mask prefix"></i>
           <label for="mask_mandatory">
             <input type="checkbox" id="mask_mandatory" name="mask_mandatory" />
             <span class="lever"></span>
@@ -96,13 +96,13 @@
     <!-- image URL -->
     <div class="row">
       <div class="input-field col s6">
-        <i class="far fa-image prefix"></i>
+        <i class="list-icon far fa-image prefix"></i>
         <input type="url" id="image_url" name="image_url" class="validate" pattern="https?://.+"/>
         <label for="image_url">Paste desired image URL here</label>
       </div>
       <!-- url -->
       <div class="input-field col s6">
-        <i class="fas fa-brackets-curly prefix"></i>
+        <i class="list-icon fas fa-brackets-curly prefix"></i>
         <input type="url" id="website_url" name="website_url" class="validate" pattern="https?://.+" />
         <label for="website_url">Paste URL for the website here</label>
       </div>
@@ -110,7 +110,7 @@
     <!-- submit button -->
             <div class="row">
                 <div class="col s12 center-align">
-                    <button type="submit" class="btn-large black">
+                    <button type="submit" class="btn-large search-reset">
                         Add New Listing <i class="fas fa-plus-square right"></i>
                     </button>
                 </div>

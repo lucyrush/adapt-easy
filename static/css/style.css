@@ -1,5 +1,6 @@
 body{
     font-family: 'Poppins', sans-serif;
+    height: 100vh;
 }
 
 /*Page headings and nav bar */
@@ -16,6 +17,11 @@ body{
 .brand-logo{
     font-family: 'Rubik', sans-serif;
     text-transform: uppercase;
+}
+
+.page-intro {
+    font-size: 130%;
+    padding-bottom: 2%;
 }
 
 /* Images */
@@ -40,6 +46,10 @@ body{
     padding: 2%;
 }
 
+.list-icon {
+    color: #3C3D5C;
+}
+
 .list-heading {
     font-family: 'Rubik', sans-serif;
     color: #3C3D5C;
@@ -55,6 +65,10 @@ body{
     text-transform: uppercase;
 }
 
+.search-reset {
+    background-color: #3C3D5C;
+}
+
 .mandatory-text {
     color: #3C3D5C;
     text-transform: uppercase;
@@ -68,11 +82,21 @@ body{
     background-color: #3C3D5C;
 }
 
-.btn-small a:hover {
-    background-color: #EDD2D2;
-}
-
-
 .page-footer {
     background-color: #9F9FAC;
+}
+
+/* Media Queries */
+
+
+/* Medium screens */
+
+
+
+/*Small Screens */
+
+@media screen and (max-width: 425px) {
+  .brand-logo {
+      font-size: 20%;
+  }
 }
