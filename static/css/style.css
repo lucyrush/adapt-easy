@@ -3,6 +3,9 @@ body{
     height: 100vh;
 }
 
+.flashes {
+    background-color: #EDD2D2;
+}
 /*Page headings and nav bar */
 .page-heading{
     font-family: 'Rubik', sans-serif;
@@ -30,14 +33,14 @@ body{
     height: 100%;
 }
 
-.btn-large {
-    background-color: #3157Af;
-}
-
 /* Register Page */
 
 .card-panel {
     height: 100%;
+}
+
+.new-here {
+    color: #3C3D5C;
 }
 
 /* Listings Page */
