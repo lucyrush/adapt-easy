@@ -6,6 +6,10 @@ Adapt Easy is a full stack application targeting small business owners and their
 
 Small business owners will be able to give a short description of their business, the COVID adaptation requirements and the time until this adaption will be implemented. Customers will also be able to see if wearing a mask is required to visit the business. Business owners will be able to create listings, update them and delete them as COVID requirements and restrictions change. 
 
+**For viewing and assessing pruposes, an admin account has been made. Username: Admin, Password: Admin**
+
+# Table of Contents
+
 # User Experience (UX)
 
 ## User Stories
@@ -30,6 +34,11 @@ Small business owners will be able to give a short description of their business
 - As a Frequent User, I want to be able to easily Logout to end the session. 
 
 ## Design
+
+Overall, the design of this site is meant to be simple, easy to see and understand, and accessible for all users. 
+
+This application is aimed at both the concious consumer and cautious business owner. During COVID-19 is of utmost importance that we make use of the local services to help 'keep the lights on' while still focussing on the safety of the staff. 
+
 
 ### Colour Scheme
 
