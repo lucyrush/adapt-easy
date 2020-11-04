@@ -100,3 +100,121 @@ Imagery is important to creat an eye-catching site. There are images primarily o
   - [New Listing](wireframes/mobile/new_listing_mobile.JPG)
   - [Listings](wireframes/mobile/listings_mobile.JPG)
   - [My Listing](wireframes/mobile/my_listing_mobile.JPG)
+
+The current site layout is different to the wireframes due to a change in image choices and colour scheme.
+
+# Features
+
+## Existing Features 
+
+### Features on all pages
+
+#### Navbar
+- There will be a difference in the navbars that is depenndent if the user is logged in or not by using their username and password. A jinja loop is used to determine which navbar to display
+  - If not in session:  the homepage, listings page, register page and login page will be displayed. With a responsive navbar that contains links to the Home, Register and Login pages.
+  - If in session: the homepage, listings page, profile page, new listing page and logout will be displayed. This is also responsive. 
+ 
+#### Footer 
+- A footer is at the bottom of every page 
+  - The footer contains the contact details of the Adapt Easy creators, links to top of the page, login page and the register page. 
+  - The footer is responsive
+
+### Features of individual pages
+
+#### Home Page 
+- The hero image
+  - The hero image is on 3 people walking a safe distance from each other, wearing masks. This image is a sign of times and a sight that all of us are used to by now!
+ 
+- Adapt Easy Description
+  - This is a short 3 paragraphs used to introfuce the user to the app and how the app may benefit them as a concious consumer or a small business owner. 
+ 
+- Extra Navigation Buttons
+  - These two buttons are a quick way for a consumer to navigate to the listings page or a small business owner to the register page to get started. These buttons allow for easy navigation for new users
+
+#### Register and Login Pages
+
+- These pages both follow the same structure:
+  - Main Image to the left of the page.
+  - Form with username and password input as well a submit button.
+  - A discrete link to either the Login/Register page should the user see they may still need to set up their account or can simply login
+ 
+ #### Listings Page
+ 
+- In the centre of the page,a search panel for the listings as well as a card panel is displayed for each listing
+  - The search panel will allow the user to search for keywords that may appear in the business name and description
+  - Upon loading, the card panel displays the business name, description, adaption description, date the adaption is valid until and if the user is logged in an Edit and Delete button
+  
+#### New Listings Page
+
+- The new Listings page contains two main elements
+  - A form that is used for the user to input details about their busines’s adaption for COVID restrictions. There are eye catching icons for each of the input fields which can help the user navigate through the form. The form contains a submit button. 
+  - An image at the bottom of the page
+
+#### Profile Page 
+
+- Similar to the Listings page, the profile page allows the current session user to see all of their listings. Each of the card panels also contain an Edit and Delete buttons to allow the user to edit their own listings.
+
+## Features Left To Implement 
+
+There are several features planned for future implementation of this project 
+
+- Pagination
+  - This could allow the user to click through the listings instead of scrolling down the page
+
+- Maps API
+  - This feature could allow the user to see exactly where the listed businesses are located in order to track those in their local area 
+  - This feature would also allow users to see more bsuiness details as listed on Google
+
+- Sharing listings with other
+  - This feature will allow the user to easily share their business adaption with other to help spread the word, not COVID!
+
+# Technologies Used
+
+- Gitpod - Used as the IDE for this application.
+- Github used for the remote storage of the code online.
+
+## Font-End Technologies
+- HTML - Used to create the structure of the application.
+- CSS - Used as the base for styling.
+- Javascript - Used to create interactivity within the project
+- JQuery - Used for some of the main javascript functionality.
+- Materialize - Used  as the design framework.
+
+## Back-End Technologies
+- Flask - Used as the microframework.
+- Jinja - Used for templating with Flask.
+- Heroku - Used to host the application
+- Python - The back-end programming language.
+- Pymongo - Used to connect the python with the database.
+- MongoDB Atlas - Used to store the database.
+
+## Database Schema
+- The application uses MongoDB for data storage. MongoDb was chosen as the database to use due to the unstructured format of the data that will be stored within it. 
+- The data stored in the database are the following:
+  - Object ID
+  - String
+ 
+### There are Three Core Collections within the Database 
+
+#### Users
+
+#### Categories
+
+#### Adaptions
+
+# Testing 
+
+# Deployment
+
+## Local Deployment 
+
+## Remote Deployment 
+
+# Content
+
+## Media 
+
+## Code 
+
+## Credits
+
