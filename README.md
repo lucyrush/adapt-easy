@@ -45,7 +45,7 @@ font-family: 'Rubik', sans-serif;
 ## Wireframes
 
 - Desktop
-  - [About](wireframes/desktop/about_desktop.JPG)
+  - [Home](wireframes/desktop/about_desktop.JPG)
   - [Register](wireframes/desktop/register_desktop.JPG)
   - [Login](wireframes/desktop/login_desktop.JPG)
   - [New Listing](wireframes/desktop/new_listing_desktop.JPG)
@@ -53,7 +53,7 @@ font-family: 'Rubik', sans-serif;
   - [My Listing](wireframes/desktop/my_listingt_desktop.JPG)
 
 - Tablet
-  - [About](wireframes/tablet/about_tablet.JPG)
+  - [Home](wireframes/tablet/about_tablet.JPG)
   - [Register](wireframes/tablet/register_tablet.JPG)
   - [Login](wireframes/tablet/login_tablet.JPG)
   - [New Listing](wireframes/tablet/new_listing_tablet.JPG)
@@ -61,7 +61,7 @@ font-family: 'Rubik', sans-serif;
   - [My Listing](wireframes/tablet/my_listing_tablet.JPG)
   
 - Mobile
-  - [About](wireframes/mobile/about_mobile.JPG)
+  - [Home](wireframes/mobile/about_mobile.JPG)
   - [Register](wireframes/mobile/register_mobile.JPG)
   - [Login](wireframes/mobile/login_mobile.JPG)
   - [New Listing](wireframes/mobile/new_listing_mobile.JPG)
