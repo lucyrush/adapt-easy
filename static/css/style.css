@@ -5,12 +5,12 @@ body{
 /*Page headings and nav bar */
 .page-heading{
     font-family: 'Rubik', sans-serif;
-    color: #DC5864;
+    color: #F35C45;
     text-transform: uppercase;
 }
 
 .nav-extended{
-    background-color: #3157Af;
+    background-color: #3C3D5C;
 }
 
 .brand-logo{
@@ -42,6 +42,7 @@ body{
 
 .list-heading {
     font-family: 'Rubik', sans-serif;
+    color: #3C3D5C;
 }
 
 .card-action {
@@ -50,13 +51,13 @@ body{
 
 .adaption-text {
     font-family: 'Rubik', sans-serif;
-    color: black;
+    color: #3C3D5C;
     text-transform: uppercase;
 }
 
 .mandatory-text {
-    font-family: 'Rubik', sans-serif;
-    color: #DC5864;
+    color: #3C3D5C;
+    text-transform: uppercase;
 }
 .data-text {
     font-size: 18px;
@@ -64,4 +65,14 @@ body{
 
 .btn-small {
     margin: 1%;
+    background-color: #3C3D5C;
+}
+
+.btn-small a:hover {
+    background-color: #EDD2D2;
+}
+
+
+.page-footer {
+    background-color: #9F9FAC;
 }
