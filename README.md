@@ -41,7 +41,7 @@ This application is aimed at both the concious consumer and cautious business ow
 
 
 ### Colour Scheme
-
+![colour scheme](static/images/adapt-easy-colours.JPG)
 
 ### Typography
 font-family: 'Poppins', sans-serif;
