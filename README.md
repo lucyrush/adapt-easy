@@ -39,6 +39,25 @@ Overall, the design of this site is meant to be simple, easy to see and understa
 
 This application is aimed at both the concious consumer and cautious business owner. During COVID-19 is of utmost importance that we make use of the local services to help 'keep the lights on' while still focussing on the safety of the staff. 
 
+The overall design idea behind this was to keep the application as accessible for all users.
+
+Adapt Easy is easily navigated. Users can easily log in and out of the session and will see different parts of the app when session use is logged in. 
+
+Adapt Easy pages primarily consist of three sections each: 
+
+1. Navbar
+A responsive navbar with links to Home, Listings, Profile, Login, Register, Logout, and New Listing pages. 
+
+2. Main Action Section
+This is where the information for the user lies, be it the information of the site itself, how the user actions the CRUD functionality, how the user logs in or registers an account.
+
+3. Footer
+A responsive footer, with Contact Details, links for the login, register, as well as the Home Page.
+
+When the user is logged in they will be able to direct themselves to the Home, Listings, Profile, New Listings and Logout pages
+When there is no current session user logged in, they will be able to access the Home, Listings, Login and Register Page
+
+
 
 ### Colour Scheme
 ![colour scheme](static/images/adapt-easy-colours.JPG)
