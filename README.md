@@ -60,15 +60,20 @@ When there is no current session user logged in, they will be able to access the
 
 
 ### Colour Scheme
+
+I made use of primarily the following four colours throughout Adapt Easy
+
 ![colour scheme](static/images/adapt-easy-colours.JPG)
 
 ### Typography
-font-family: 'Poppins', sans-serif;
-font-family: 'Rubik', sans-serif;
 
+The Poppins font is the main font used throughout the site with Sans-serif as the fallback in case the font is not being imported into the site correctly. 
+
+The Rubik font is used for the main headings on each of the pages, as well as the Brand Logo in the nav bar. This font is popular in current stylish sites and is easily read. Sans-serif is the fallback as well. 
 
 ### Imagery
 
+Imagery is important to creat an eye-catching site. There are images primarily on the Home, Login and Register pages. There is an image in the New Listings page of an empty city to signify what busy cities now look like due to restrictions. 
 
 ## Wireframes
 
