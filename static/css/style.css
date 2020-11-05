@@ -89,6 +89,21 @@ body{
     background-color: #9F9FAC;
 }
 
+.md-form .input-prefix{
+    color:#ffa822!important;
+}
+.md-form .input-prefix.active {
+    color:#ffa822!important;
+}
+.md-form input[type=‘text’]:not(.broswer-default):focus:not([readonly]){
+    color:#134e6f!important;
+    border-bottom:1px solid #FFA822!important;
+    box-shadow: 0 1px 0 0 #FFA822!important;
+}
+.label:focus {
+    color:#ffa822!important;
+}
+
 /* Media Queries */
 
 

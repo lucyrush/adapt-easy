@@ -65,12 +65,13 @@ def login():
         if existing_user:
             # ensure hashed password matches user input
             if check_password_hash(
-                    existing_user["password"], request.form.get("password")):
-                        session["user"] = request.form.get("username").lower()
-                        flash("Welcome, {}".format(
-                            request.form.get("username")))
-                        return redirect(url_for(
-                            "profile", username=session["user"]))
+                    existing_user["password"],
+                    request.form.get("password")):
+                session["user"] = request.form.get("username").lower()
+                flash("Welcome, {}".format(
+                    request.form.get("username")))
+                return redirect(url_for(
+                    "profile", username=session["user"]))
             else:
                 # invalid password match
                 flash("Incorrect Username and/or Password")
@@ -94,7 +95,7 @@ def profile(username):
 
     if username == session["user"]:
         return render_template("profile.html", username=username,
-            adaptions=adaptions, user=user)
+                               adaptions=adaptions, user=user)
 
     return redirect(url_for("login"))
 
@@ -152,7 +153,7 @@ def edit_adaption(adaption_id):
     adaption = mongo.db.adaptions.find_one({"_id": ObjectId(adaption_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit_adaption.html",
-        adaption=adaption, categories=categories)
+                           adaption=adaption, categories=categories)
 
 
 @app.route("/delete_adaption/<adaption_id>")
