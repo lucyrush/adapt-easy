@@ -1,22 +1,42 @@
-{% extends "base.html" %}
-{% block content %}
+{% extends "base.html" %} {% block content %}
 
-<h1 class="page-heading center-align"> ADAPT EASY </h1>
+<h1 class="page-heading center-align">ADAPT EASY</h1>
 
 <div class="row">
-      <div class="col m6 s12">
-        <div class="col s12"><p class="page-intro center-align"> ADAPT EASY is here to help small businesses and their valued customers
-            stay stafe and connected during the pandemic </p></div>
-        <p class="page-intro center-align"> ADAPT EASY is designed to allow small businesses to list how they have
-            managed to their local COVID-19 restrictions</p>
-        <p class="page-intro center-align"> As consumers, it is important to be mindful and adhere to these
-            important adaptions while continuing to support small and local busines</p>
-        <a href="{{ url_for('get_adaptions') }}" class="search-reset center-align btn-large">Go to listings</a>
-         <a href="{{ url_for('register') }}" class="search-reset center-align btn-large">Register a new adaption</a>
-      </div>
-      
-      <div class="col m6 s12"><img class="responsive-img center-align" src="static/images/social_distance.png" alt="img"></div>
+  <div class="col m6 s12">
+    <div class="col s12">
+      <p class="page-intro center-align">
+        ADAPT EASY is here to help small businesses and their valued customers
+        stay stafe and connected during the pandemic
+      </p>
     </div>
+    <p class="page-intro center-align">
+      ADAPT EASY is designed to allow small businesses to list how they have
+      managed to their local COVID-19 restrictions
+    </p>
+    <p class="page-intro center-align">
+      As consumers, it is important to be mindful and adhere to these important
+      adaptions while continuing to support small and local busines
+    </p>
+    <a
+      href="{{ url_for('get_adaptions') }}"
+      class="search-reset center-align btn-large"
+      >Go to listings</a
+    >
+    <a
+      href="{{ url_for('register') }}"
+      class="search-reset center-align btn-large"
+      >Register a new adaption</a
+    >
+  </div>
 
+  <div class="col m6 s12">
+    <img
+      class="responsive-img center-align"
+      src="static/images/social_distance.png"
+      alt="img"
+    />
+  </div>
+</div>
 
 {% endblock %}

@@ -6,7 +6,7 @@ body{
 .flashes {
     background-color: #EDD2D2;
 }
-/*Page headings and nav bar */
+
 .page-heading{
     font-family: 'Rubik', sans-serif;
     color: #F35C45;
@@ -27,13 +27,9 @@ body{
     padding-bottom: 2%;
 }
 
-/* Images */
-
 .register-img {
     height: 100%;
 }
-
-/* Register Page */
 
 .card-panel {
     height: 100%;
@@ -43,7 +39,6 @@ body{
     color: #3C3D5C;
 }
 
-/* Listings Page */
 .card-image {
     width: 30%;
     padding: 2%;
@@ -87,34 +82,4 @@ body{
 
 .page-footer {
     background-color: #9F9FAC;
-}
-
-.md-form .input-prefix{
-    color:#ffa822!important;
-}
-.md-form .input-prefix.active {
-    color:#ffa822!important;
-}
-.md-form input[type=‘text’]:not(.broswer-default):focus:not([readonly]){
-    color:#134e6f!important;
-    border-bottom:1px solid #FFA822!important;
-    box-shadow: 0 1px 0 0 #FFA822!important;
-}
-.label:focus {
-    color:#ffa822!important;
-}
-
-/* Media Queries */
-
-
-/* Medium screens */
-
-
-
-/*Small Screens */
-
-@media screen and (max-width: 425px) {
-  .brand-logo {
-      font-size: 20%;
-  }
 }

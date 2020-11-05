@@ -2,28 +2,41 @@
 
 <h2 class="page-heading center-align">Edit Listing</h2>
 <h6 class="page-intro center-align">
-  Make changes to your current listing here, perfect for when restrictions change!
+  Make changes to your current listing here, perfect for when restrictions
+  change!
 </h6>
 
 <div class="row card-panel grey lighten-5">
-  <form class="col s12" method="POST" action="{{ url_for('edit_adaption', adaption_id=adaption._id) }}">
-   <div class="row">
-   <!--select category-->
-				<div class="input-field col s12">
-                    <i class="fas fa-city prefix"></i>
-					<select id="category_name" name="category_name" class="validate" required>
-                        <option value="" disabled>Choose Category or sector</option>
-                        {% for category in categories %}
-                            {% if category.category_name == adaption.category_name %}
-                                <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
-                            {% else %}
-                                <option value="{{ category.category_name }}">{{ category.category_name }}</option>
-                            {% endif %}
-                        {% endfor %}
-                    </select>
-					<label for="category_name">Business Category</label>
-				</div>
-			</div>
+  <form
+    class="col s12"
+    method="POST"
+    action="{{ url_for('edit_adaption', adaption_id=adaption._id) }}"
+  >
+    <div class="row">
+      <!--select category-->
+      <div class="input-field col s12">
+        <i class="fas fa-city prefix"></i>
+        <select
+          id="category_name"
+          name="category_name"
+          class="validate"
+          required
+        >
+          <option value="" disabled>Choose Category or sector</option>
+          {% for category in categories %} {% if category.category_name ==
+          adaption.category_name %}
+          <option value="{{ category.category_name }}" selected>
+            {{ category.category_name }}
+          </option>
+          {% else %}
+          <option value="{{ category.category_name }}">
+            {{ category.category_name }}
+          </option>
+          {% endif %} {% endfor %}
+        </select>
+        <label for="category_name">Business Category</label>
+      </div>
+    </div>
     <!-- business name -->
     <div class="row">
       <div class="input-field col s12">
@@ -51,7 +64,10 @@
           minlength="5"
           maxlength="200"
           class="materialize-textarea validate"
-          required>{{- adaption.business_description -}}</textarea>
+          required
+        >
+{{- adaption.business_description -}}</textarea
+        >
         <label for="business_description">Business Description</label>
       </div>
     </div>
@@ -65,7 +81,10 @@
           minlength="5"
           maxlength="200"
           class="materialize-textarea validate"
-          required>{{- adaption.adaption_description -}}</textarea>
+          required
+        >
+{{- adaption.adaption_description -}}</textarea
+        >
         <label for="adaption_description">Adaption Description</label>
       </div>
     </div>
@@ -90,10 +109,20 @@
         <div class="switch">
           <i class="fas fa-head-side-mask prefix"></i>
           <label for="mask_mandatory">
-          {% if adaption.mask_mandatory == "on" %}
-            <input type="checkbox" id="mask_mandatory" name="mask_mandatory" checked/>
+            {% if adaption.mask_mandatory == "on" %}
+            <input
+              type="checkbox"
+              id="mask_mandatory"
+              name="mask_mandatory"
+              checked
+            />
             {% else %}
-            <input type="checkbox" id="mask_mandatory" name="mask_mandatory" checked/>
+            <input
+              type="checkbox"
+              id="mask_mandatory"
+              name="mask_mandatory"
+              checked
+            />
             {% endif %}
             <span class="lever"></span>
             Mask Mandatory for service
@@ -105,33 +134,44 @@
     <div class="row">
       <div class="input-field col s6">
         <i class="far fa-image prefix"></i>
-        <input type="url" id="image_url" name="image_url" class="validate"
-            value="{{ adaption.image_url }}" pattern="https?://.+"/>
+        <input
+          type="url"
+          id="image_url"
+          name="image_url"
+          class="validate"
+          value="{{ adaption.image_url }}"
+          pattern="https?://.+"
+        />
         <label for="image_url">Paste desired image URL here</label>
       </div>
       <!-- url -->
       <div class="input-field col s6">
         <i class="fas fa-brackets-curly prefix"></i>
-        <input type="url" id="website_url" name="website_url" class="validate"
-            value="{{ adaption.website_url }}" pattern="https?://.+"/>
+        <input
+          type="url"
+          id="website_url"
+          name="website_url"
+          class="validate"
+          value="{{ adaption.website_url }}"
+          pattern="https?://.+"
+        />
         <label for="website_url">Paste URL for the website here</label>
       </div>
     </div>
-    
-            <div class="row">
-            <div class="col s12 center-align">
-                <!-- cancel button -->
-                    <a href="{{ url_for('get_adaptions') }}" class="btn-large red">
-                        Cancel <i class="fas fa-times-circle right"></i>
-                    </a>
-                <!-- submit button -->
-                    <button type="submit" class="btn-large black">
-                        Edit Listing <i class="fas fa-edit right"></i>
-                    </button>
-                </div>
-            </div>
-  </form>
 
+    <div class="row">
+      <div class="col s12 center-align">
+        <!-- cancel button -->
+        <a href="{{ url_for('get_adaptions') }}" class="btn-large red">
+          Cancel <i class="fas fa-times-circle right"></i>
+        </a>
+        <!-- submit button -->
+        <button type="submit" class="btn-large black">
+          Edit Listing <i class="fas fa-edit right"></i>
+        </button>
+      </div>
+    </div>
+  </form>
 </div>
 
 {% endblock %}
