@@ -237,12 +237,10 @@ There are several features planned for future implementation of this project
 [W3C Markup Validation](https://validator.w3.org/nu/#textarea)
 
 - HTML 
-
-
+  - No errors in HTML were notes
+  
 - CSS
   - No errors in CSS were noted
-
-
 
  [JSHINT](https://jshint.com/)
 
@@ -258,7 +256,6 @@ There are several features planned for future implementation of this project
 
 - One undefinied variables were noted which are due to the use of JQuery:
   - $
-
 
 [Python PEP8](https://pypi.org/project/autopep8/)
 
