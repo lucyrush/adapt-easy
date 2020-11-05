@@ -234,14 +234,46 @@ There are several features planned for future implementation of this project
 
 ### Validator Testing 
 
-W3C Markup Validation
+[W3C Markup Validation](https://validator.w3.org/nu/#textarea)
 
 - HTML 
+  - No errors in HTML were notes
+  
 - CSS
-- JSHINT
-  - Metric Returned
+  - No errors in CSS were noted
 
-Python PEP8
+ [JSHINT](https://jshint.com/)
+
+- When run through the [JSHint validator](https://jshint.com/) these metrics were returned:
+  - There are 7 functions in this file.
+  -  Function with the largest signature take 0 arguments, while the median is 0.
+  -  Largest function has 7 statements in it, while the median is 3.
+  -  The most complex function has a cyclomatic complexity value of 3 while the median is 2..
+
+- Two warnings
+  - 28	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+  -  29	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+
+- One undefinied variables were noted which are due to the use of JQuery:
+  - $
+
+[Python PEP8](https://pypi.org/project/autopep8/)
+
+- The autopep8 extension was installed in the workspace.
+
+- To install this enter this in the terminal:
+  - `pip3 install --upgrade autopep8`
+
+- Then, you can format the code into PEP8 formatting by entering this command into the terminal:
+  - `autopep8 --in-place --aggressive --aggressive app.py`
+  
+Due to my overall experience with Python, I elected not to follow the PEP8 formatting during the creation of the application, however decided to format the code into PEP8 after the app.py was written.
+
+Now after this application is complete, I am more aware of the requiremetns to follow t follow the PEP8 formatting and will be following this in the future.
+
+When the ``app.py`` code is pasted into PEP8 checker, no errors appeard 
+- ([Results](http://pep8online.com/checkresult))
+
 
 ### Compatibility Testing
 
