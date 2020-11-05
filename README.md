@@ -221,10 +221,10 @@ There are several features planned for future implementation of this project
 | Business Name      | business_name     |   text      |    string |
 | Business Description  | business_description   |   text      |    string |
 | Adaption description  | adaption_description    |   text      |    string |
-| Mask Mandatory     | valid_until    |       |   |
+| Mask Mandatory     | valid_until    |  checkbox     |   |
 | Image URL      | img_url     |     url  |  text |
 | Website URL      | website_url     |     url  |  text |
-| Created By      | created_by     |       |  text |
+| Created By      | created_by     |   url    |  text |
 
 
 
