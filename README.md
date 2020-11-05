@@ -15,6 +15,28 @@ Small business owners will be able to give a short description of their business
 1. [User Experience](#user-experience(ux))
   - [User Stories](#user-stories)
   - [Design](#design)
+    - [Colour Scheme](#colour-scheme)
+    - [Typography](#typography)
+    - [Imagery](#imagery)
+2. [Wireframes](#wireframes)
+3. [Features](#features)
+  - [Existing Features](#existing-features)
+    - [Features On All Pages](#features-on-all-pages)
+    - [Features Of Individual Pages](#features-of-individual-pages)
+  - [Features Left To Implement](#features-left-to-implement)
+4. [Technologies Used](#technologies-used)
+  - [Front-End Technologies](#front-end-technologies)
+  - [Back-End Technologies](#back-end-technologies)
+  - [Database Schema](#database-schema)
+5. [Testing](#testing)
+  - [Validator Testing](#validator-testing)
+  - [Functional Testing](#functional-testing)
+6. [Deployment](#deployment)
+  - [Local Deployment](#local-deployment)
+  - [Remote Deployment](#remote-deployment)
+7. [Content](#content)
+  - [Media](#media)
+  - [Credits](#credits)
 
 # User Experience (UX)
 
@@ -289,7 +311,7 @@ When the ``app.py`` code is pasted into PEP8 checker, no errors appeard
   - The listings can look squashed on smaller screens
   - The forms validation still make use of the standard materialize colours, this does clash with the new colour scheme
 
-## Funtional Testing
+## Functional Testing
 
 Testing User Stories from User Experience (UX) Section
 
@@ -398,3 +420,4 @@ All content for the Adapt Easy application was written by me.
 - All of the information I needed to complete the project was made available through the Code Institute LMS
 - Thank you to [Claire Lally](https://github.com/ClaireLally8) for the help having a look over the final product with me! 
 
+Stay Safe Out There!
