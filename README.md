@@ -12,6 +12,10 @@ Small business owners will be able to give a short description of their business
 
 # Table of Contents
 
+1. [User Experience](#user-experience(ux))
+  - [User Stories](#user-stories)
+  - [Design](#design)
+
 # User Experience (UX)
 
 ## User Stories
