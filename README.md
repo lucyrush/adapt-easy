@@ -274,15 +274,14 @@ Now after this application is complete, I am more aware of the requiremetns to f
 When the ``app.py`` code is pasted into PEP8 checker, no errors appeard 
 - ([Results](http://pep8online.com/checkresult))
 
-
-### Compatibility Testing
-
-- Browsers 
-- Responsiveness across all screens
-
 ### Known Issues 
 - Resolved 
+  - The colour scheme did not suit the images that I originally used therefore had to get a new colour scheme
+  - The profile page was showing all listing, not restricting to just the session user
 - Unresolved
+  - The two buttons on the home page may not look the best on smaller screens, due to a restriction in time I did not get to solve this issue. 
+  - The listings can look squashed on smaller screens
+  - The forms validation still make use of the standard materialize colours, this does clash with the new colour scheme
 
 ## Funtional Testing
 
@@ -292,22 +291,44 @@ Testing User Stories from User Experience (UX) Section
 
 - As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about why the app exists. 
   - The hero image on the Home Page clearly indicates that this site is COVID-related
-  
+  - The introduction to Adapt Easy is easily understood, it allows both consumers and small business owners to understand the purpose of the site
 - As a First Time Visitor, I want to be able to easily navigate throughout the site to find content relevant to me.
+  - There are two buttons in the middle of the page that prompts the user to navigate themselves to the listings or register page
+  - The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will       end up at clearly
+  - At the bottom of the first 3 pages there is a redirection call to action to ensure the user always has somewhere to go and doesn't feel trapped as they get to the bottom of      the page
+  - On the New Listing Page, after a form response is submitted, the page refreshes and the user is brought to the top of the page where the navigation bar is.
 - As a First Time Visitor, I want to be able to see which businesses have had to adapt their services due to COVID and how these adaptations may affect me as a consumer.
+  - Upon navigating to the Listings page, the user can easily see a lit of all the business adaptions
+  - The user can easily search for keyword that may be included in the business name and description
+  - Th business adaptions are clearly layed out and easily read 
 - As a First Time visitor, I would like to be able to see if the site would be relevant to me should I have my own small business that has been affected by COVID
+  - As a small business owner, the user can follow the prompt to register from the home page 
+  - Without Login or Register details, the user would still be able to see the Home page and the Listings page to immediately see if Adapt Easy would be useful for them 
 
 ### Returning Visitor Goals
 
-- As a Returning Visitor, I want to find information about signing up or registering for an account. 
+- As a Returning Visitor, I want to find information about signing in or registering for an account.
+  - Upon visiting the Home page, the user can easily navigate to the Register page via the navbar or the prompt on the Homepage to to create their username and password.
+  - The Registration will be confirmed by a clear Flash message
 - As a Returning Visitor, I want to easily see how to add my own listing for my business and the adaptations I have made to the service.
+  - Once the user is logged in, they are easily able to navigate to the Profile page where they are able to see exactly which Listings they have uploaded
 - As a Returning Visitor, I want to be able to see how the listing looks in comparison to other listings. 
+  - The session user is able to navigate from the Profile page directly to the Listings page where they can easily compare their own listing to others. 
 
 ### Frequent User Goals
 - As a Frequent visitor, I want to be able to easily navigate to the Login information
+  - The user will be able to navigate to the Login page via the navbar, where they can login with their username and passowrd
+  - A flash message will confirm that the Login was successful, making it clear that the user has started the session
 - As a Frequent User, I want to check to see if the small businesses close to me have changed the way their service has run and until when these changes will be actioned.
+  - The user will be able to get a lot of information about business adaptions by navigating to the Listings page
+  - The user can see that the listings are easily read and include small pictures of their business
 - As a Frequent User, I want to be able to view my listings, update the listing to any new changes, and delete any my listings should they no longer be relevant. 
+  - As a user that has logged into their account, they will be able to see exactly which listings they can edit 
+  - The user is easily able to read the information they currently have listed
+  - The user can follow the Edit button, they will be directed to a form which has been auto filled with the existing adaption details, the user is easily able to adjust these     details
+  - The user is able to hit the Delete button in order to remove their listing from their Profile and the Listings page should they no longer be relevant
 - As a Frequent User, I want to be able to easily Logout to end the session. 
+  - There is a easily noticed Logout button in the navbar where the user is easily able to end the session
 
 # Deployment
 
