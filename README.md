@@ -1,5 +1,7 @@
 # **Adapt Easy**
 
+![Mockup](static/images/mockup.JPG)
+
 View live project here 
 
 Adapt Easy is a full stack application targeting small business owners and their customer bases. It allows both small business owners/managers and their customers to see how their business has adapted to suit new COVID requirements. It will allow businesses to effectively communicate these adaptations to their customers in a clear way to make sure everyone stays safe during the pandemic.
