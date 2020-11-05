@@ -313,9 +313,54 @@ Testing User Stories from User Experience (UX) Section
 
 ## Local Deployment 
 
+### To run this project locally
+
+In order to run this project locally, you will need to install the following:
+- An IDE, such as [VS Code](https://code.visualstudio.com/)
+- [PIP](https://pip.pypa.io/en/stable/installing/) to install the app requirements.
+- [Python3](https://www.python.org/downloads/) to run the application
+- [GIT](https://www.atlassian.com/git/tutorials/install-git) for version control
+- [MongoDB](https://www.mongodb.com/) to develop the database.
+ -Once this is done, you will need need to download the .ZIP file of the repository, unzip this file and then in the CLI with GIT installed, enter the following command:
+  - ``https://github.com/lucyrush/adapt-easy.git``
+
+- Navigate to the to path using the ``cd`` command.
+
+- Create a `.env` file with your credentials. Be sure to include your `MONGO_URI` and `SECRET_KEY` values.
+
+- Install all requirements from the ``requirements.txt`` file using the following command:
+  - ``sudo -H pip3 -r requirements.txt``
+
+- Sign up for a free account on MongoDB and create a new Database called adapt-easy. The names of the databases collections can be found in the database schema section.
+
+- You should then be able to launch your app using the following command in your terminal:
+  - ``python app.py``
+
 ## Remote Deployment 
 
+- Create a ``requirements.txt`` file using the terminal command ``pip freeze > requirements.txt``
+- Create a Procfile with the terminal command ``echo web: python app.py > Procfile``
+- ``git add`` and ``git commit`` the new requirements and Procfile and then ``git push`` the project to GitHub.
+- Navigate over to [Heroku](https://id.heroku.com/login)
+- Click the "new" button, give the project a name & set the region to Europe.
+- From the heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub.
+- Confirm the linking of the heroku app to the correct GitHub repository.
+- In the heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
+- Set the following config vars:
+
+| KEY           | Value         | 
+| ------------- |:-------------:| 
+| DEBUG          | FALSE         | 
+| IP            | 	0.0.0.0      |
+| PORT          | 5000           | 
+| MONGODBNAME   | <database_name>   | 
+| MONGO_URI      | mongodb+srv://:@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority  | 
+|SECRET_KEY     | <secret_key>    | 
+
+
 # Content
+
+All content for the Adapt Easy application was written by me.
 
 ## Media 
 
@@ -324,4 +369,5 @@ Testing User Stories from User Experience (UX) Section
 ## Credits
 
 - All of the information I needed to complete the project was made available through the Code Institute LMS
+- Thank you to [Claire Lally](https://github.com/ClaireLally8) for the help having a look over the final product with me! 
 
