@@ -230,6 +230,53 @@ There are several features planned for future implementation of this project
 
 # Testing 
 
+## Code Testing 
+
+### Validator Testing 
+
+W3C Markup Validation
+
+- HTML 
+- CSS
+- JSHINT
+  - Metric Returned
+
+Python PEP8
+
+### Compatibility Testing
+
+- Browsers 
+- Responsiveness across all screens
+
+### Known Issues 
+- Resolved 
+- Unresolved
+
+## Funtional Testing
+
+Testing User Stories from User Experience (UX) Section
+
+### First Time Visitor Goals
+
+- As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about why the app exists. 
+  - The hero image on the Home Page clearly indicates that this site is COVID-related
+  
+- As a First Time Visitor, I want to be able to easily navigate throughout the site to find content relevant to me.
+- As a First Time Visitor, I want to be able to see which businesses have had to adapt their services due to COVID and how these adaptations may affect me as a consumer.
+- As a First Time visitor, I would like to be able to see if the site would be relevant to me should I have my own small business that has been affected by COVID
+
+### Returning Visitor Goals
+
+- As a Returning Visitor, I want to find information about signing up or registering for an account. 
+- As a Returning Visitor, I want to easily see how to add my own listing for my business and the adaptations I have made to the service.
+- As a Returning Visitor, I want to be able to see how the listing looks in comparison to other listings. 
+
+### Frequent User Goals
+- As a Frequent visitor, I want to be able to easily navigate to the Login information
+- As a Frequent User, I want to check to see if the small businesses close to me have changed the way their service has run and until when these changes will be actioned.
+- As a Frequent User, I want to be able to view my listings, update the listing to any new changes, and delete any my listings should they no longer be relevant. 
+- As a Frequent User, I want to be able to easily Logout to end the session. 
+
 # Deployment
 
 ## Local Deployment 
