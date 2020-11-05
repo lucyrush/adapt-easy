@@ -70,7 +70,7 @@
             >Profile</a
           >
         </li>
-        <li><a href="#">New Listing</a></li>
+        <li><a href="{{ url_for('new_listing') }}">New Listing</a></li>
         <li><a href="{{ url_for('logout') }}">Logout</a></li>
         {% else %}
         <li><a href="{{ url_for('login') }}">Login</a></li>
