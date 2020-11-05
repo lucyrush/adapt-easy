@@ -221,10 +221,10 @@ There are several features planned for future implementation of this project
 | Business Name      | business_name     |   text      |    string |
 | Business Description  | business_description   |   text      |    string |
 | Adaption description  | adaption_description    |   text      |    string |
-| Mask Mandatory     | valid_until    |  checkbox     |   |
+| Mask Mandatory     | valid_until    |  checkbox     | text  |
 | Image URL      | img_url     |     url  |  text |
 | Website URL      | website_url     |     url  |  text |
-| Created By      | created_by     |   url    |  text |
+| Created By      | created_by     |  text   |  string |
 
 
 
@@ -240,7 +240,9 @@ There are several features planned for future implementation of this project
 
 ## Media 
 
-## Code 
+- All images on this site were sourced from [unDraw](https://undraw.co/), an open source illustration site, that has beautiful SVG images that you can use
 
 ## Credits
+
+- All of the information I needed to complete the project was made available through the Code Institute LMS
 
