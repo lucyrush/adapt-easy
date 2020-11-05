@@ -198,9 +198,35 @@ There are several features planned for future implementation of this project
 
 #### Users
 
+| Title         | Key in db     | for validation type  | Data Type |
+| ------------- |:-------------:| --------------------:|----------:|
+| Account ID    | _id           | none                 | ObjectID  |
+| Username      | usrename     |   username            |    string |
+| Password     | password      |    password           |   string  |
+
 #### Categories
 
+| Title         | Key in db     | for validation type  | Data Type |
+| ------------- |:-------------:| --------------------:|----------:|
+| Category ID    | _id           | none                 | ObjectID  |
+| Category Name      | category_name     |   text      |    string |
+
+
 #### Adaptions
+
+| Title         | Key in db     | for validation type  | Data Type |
+| ------------- |:-------------:| --------------------:|----------:|
+| Adaption ID   | _id           | none                 | ObjectID  |
+| Category Name      | category_name     |   text      |    string |
+| Business Name      | business_name     |   text      |    string |
+| Business Description  | business_description   |   text      |    string |
+| Adaption description  | adaption_description    |   text      |    string |
+| Mask Mandatory     | valid_until    |       |   |
+| Image URL      | img_url     |     url  |  text |
+| Website URL      | website_url     |     url  |  text |
+| Created By      | created_by     |       |  text |
+
+
 
 # Testing 
 
