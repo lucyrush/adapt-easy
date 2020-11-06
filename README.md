@@ -226,15 +226,15 @@ There are several features planned for future implementation of this project
 
 #### Users
 
-| Title         | Key in db     | for validation type  | Data Type |
+| Title         | Key in db     | form validation type  | Data Type |
 | ------------- |:-------------:| --------------------:|----------:|
 | Account ID    | _id           | none                 | ObjectID  |
-| Username      | usrename     |   username            |    string |
-| Password     | password      |    password           |   string  |
+| Username      | usrename     |   text           |    string |
+| Password     | password      |    text           |   string  |
 
 #### Categories
 
-| Title         | Key in db     | for validation type  | Data Type |
+| Title         | Key in db     | form validation type  | Data Type |
 | ------------- |:-------------:| --------------------:|----------:|
 | Category ID    | _id           | none                 | ObjectID  |
 | Category Name      | category_name     |   text      |    string |
@@ -242,16 +242,17 @@ There are several features planned for future implementation of this project
 
 #### Adaptions
 
-| Title         | Key in db     | for validation type  | Data Type |
+| Title         | Key in db     | form validation type  | Data Type |
 | ------------- |:-------------:| --------------------:|----------:|
 | Adaption ID   | _id           | none                 | ObjectID  |
 | Category Name      | category_name     |   text      |    string |
 | Business Name      | business_name     |   text      |    string |
 | Business Description  | business_description   |   text      |    string |
 | Adaption description  | adaption_description    |   text      |    string |
-| Mask Mandatory     | valid_until    |  checkbox     | text  |
-| Image URL      | img_url     |     url  |  text |
-| Website URL      | website_url     |     url  |  text |
+| Mask Mandatory       | mask_mandatory    |  checkbox     | string  |
+| Valid Until      | valid_until    |  datepicker    | string  |
+| Image URL      | img_url     |     url  |  string |
+| Website URL      | website_url     |     url  |  string |
 | Created By      | created_by     |  text   |  string |
 
 
@@ -300,7 +301,6 @@ Due to my overall experience with Python, I elected not to follow the PEP8 forma
 Now after this application is complete, I am more aware of the requiremetns to follow t follow the PEP8 formatting and will be following this in the future.
 
 When the ``app.py`` code is pasted into PEP8 checker, no errors appeard 
-- ([Results](http://pep8online.com/checkresult))
 
 ### Known Issues 
 - Resolved 
